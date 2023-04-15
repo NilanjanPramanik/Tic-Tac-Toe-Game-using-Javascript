@@ -1,0 +1,99 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Roboto+Mono:wght@500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( 790.3deg,  rgba(84,212,228,1) 0.2%, rgba(68,36,164,1) 100% );
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #ffffff;
+    width: 70%;
+    max-width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}
+h3{
+    font-size: 30px;
+    color: rgba(68,36,164,1);
+    letter-spacing: 3px;
+}
+
+#player_status{
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(0, 132, 255);
+}
+
+.box_container{
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px;
+}
+
+.box_container button{
+    border: 3px solid rgba(68, 36, 164, 0.5);
+    font-size: 40px;
+    font-weight: 800;
+    cursor: pointer;
+}
+.boxtext{
+    color: rgba(68, 36, 164, 0.9);
+}
+
+
+.matched{
+    color: rgb(255, 18, 129) !important;
+
+}
+
+#box2, #box1, #box3{
+    border-top: 0;
+}
+#box7, #box8, #box9{
+    border-bottom: 0;
+}
+#box4, #box1, #box7{
+    border-left: 0;
+}
+#box3, #box6, #box9{
+    border-right: 0;
+}
+
+#win_msg{
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(0, 94, 255);
+}
+
+#restart{
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+    border: 3px solid rgba(68,36,164,1);
+    color: rgba(68,36,164,1);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer
+    ;
+}
+
+@media (max-width: 400px){
+    .container{
+        width: 95%;
+    }
+}
